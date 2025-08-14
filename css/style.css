@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.section_first{
+    width: 100%;
+    height: 100vh;
+    background: #cfb418;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.birinchi{
+    width: 500px;
+    height: 500px;
+    background-color: #143e52;
+    display: flex;
+    align-items:flex-end;
+    overflow: hidden;
+} 
+
+.ikkinchi{
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    width: 250px;
+    height: 250px;
+    background-color: #143e52;
+    transform: rotate(90deg);
+    transition: transform 0.28s ease 0.28s, background-color 0.2s ease ;
+    
+}
+
+.uchunchi{
+    width: 150px;
+    height: 150px;
+    background-color: #143e52;
+    transition: background-color 0.1s ease;
+    transform: rotate(90deg);
+    transition: transform 0.35s ease 0.35s, background-color 0.2s ease ;
+} 
+
+.birinchi:hover .ikkinchi {
+    background-color: #a09535;
+    transform: translateX(0);
+}
+
+.birinchi:hover .uchunchi {
+    background-color: #cfb418;
+    transform: translateX(0);
+}
+/* ================================================================================================= */
+
+.section_thrid {
+    width: 100%;
+    height: 100vh;
+    background: #689fd4; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid red;
+    justify-content: center;
+    gap: 50px;
+}
+
+.ichki {
+    display: flex;
+    gap: 120px;
+}
+
+.tepa {
+    width: 100px;
+    height: 50px;
+    border: 15px solid #0a0d46; 
+    border-bottom: none; 
+    border-radius: 100px 100px 0 0; 
+    transform: rotate(180deg);
+    transition: transform 0.35s ease 0.35s;
+}
+
+.past {
+    width: 100px;
+    height: 50px;
+    border: 15px solid #0a0d46; 
+    border-top: none; 
+    border-radius: 0 0 100px 100px; 
+    transform: rotate(180deg);
+    transition: transform 0.35s ease 0.35s ;
+}
+
+.section_thrid:hover .tepa{
+    transform: translateX(0);
+    
+}
+.section_thrid:hover .past{
+    transform: translateX(0);
+    
+}
+/* ================================================================================================= */
+
+.section_middle{
+    width: 100%;
+    height: 100vh;
+    background: #14247c;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dumaloq{
+    width: 300px;
+    height: 300px;
+    background: #dee038;
+    border-radius: 720px;
+    display: flex;
+    position: relative; 
+    overflow: hidden;
+}
+
+.tog1{
+    width: 150px;
+    height: 150px;
+    background: #dee038;
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+    transform: rotate(45deg);
+    transition: background 0.35s ease 0.35s ;
+}
+.tog2{
+    width: 200px;
+    height: 200px;
+    background: #dee038;
+    position: absolute;
+    bottom: -40px;
+    left: 120px;
+    transform: rotate(45deg);
+    transition: background 0.35s ease 0.35s ;
+}
+
+.dumaloq:hover .tog1{
+    transform: rotate(45deg);
+    background: #d84335;
+    
+}
+.dumaloq:hover .tog2{
+    transform: rotate(45deg);
+    background: #d84335;
+    
+}
+/* ================================================================================================= */
+
+.section_nmolyapti{
+    width: 100%;
+    height: 100vh;
+    background: #252525;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    width: 300px;
+    display: flex;
+    height: 420px;
+    background: #ffbb00;
+    border-radius: 150px 150px 40px 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden;
+}
+
+.qutosh{
+    width: 90px;
+    height: 0px;
+    background: #fdff7e;
+    border-radius: 100%;
+    transition: height 0.2s ease 0.2s ;
+}
+
+.dumaloq1{
+    width: 0px;
+    height: 300px;
+    padding-left: 25px;
+    background: #ffbc7e;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -80px;
+    right: 120px;
+    transition: width 0.35s ease 0.35s ;
+}
+
+.dumaloq2{
+    width: 0px;
+    height: 300px;
+    background: #6e550e;
+    border-radius: 100%;
+    position: absolute; 
+    bottom: -80px;
+    left: 100px;
+    transition: width 0.35s ease 0.35s ;
+}
+
+.main:hover .dumaloq2{
+    width: 300px;
+    
+}
+.main:hover .dumaloq1{
+    width: 300px; 
+}
+
+.main:hover .qutosh{
+    height: 90px;
+}
+/* ================================================================================================= */
+
+.section_lastone{
+    width: 100%;
+    height: 100vh;
+    background: #259dff;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.kvadrat{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 0%;
+    height: 30vh;
+    background-color: #14247c;
+    display: flex;
+    position: relative; 
+    overflow: hidden;
+    transition: width 0.2s ease  0.2s ;
+}
+
+.doyra{
+    display: flex;
+    margin: 0 auto;
+    width: 0px;
+    height: 350px;
+    border: 70px solid #14247c;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease  0.3s ;
+}
+
+.orta{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background: #14247c;
+    border-radius: 100%;
+    transition: background 0.4s ease  0.4s ;
+}
+
+.section_lastone:hover .kvadrat{
+    width: 30%;
+}
+.kvadrat:hover .doyra{
+    border: 70px solid #259dff;
+    width: 350px;
+    
+}
+.kvadrat:hover .orta{
+    background: goldenrod;
+    
+}
+/* ================================================================================================= */
+
+.section_last{
+    width: 100%;
+    height: 100vh;
+    background: #14247c;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kalla{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: #d84335;
+    border-radius: 150px 150px 70px 70px;
+    position: relative; 
+    overflow: hidden;
+    
+}
+
+.bosh-main{
+    display: flex;
+    position: absolute; 
+    bottom: 220px;
+    left: 0;
+}
+.bosh{
+    width: 1px;
+    height: 150px;
+    background-color: #fffda5;
+    border-radius: 100%;
+    transition: width 0.2s ease  0.2s ;
+}
+
+.kozlar_main{
+    display: flex;
+    position: absolute; 
+    bottom: 80px;
+    left: 25px;
+    gap: 50px;
+}
+
+.kozlar{
+    width: 100px;
+    height: 1px;
+    background-color: #fffda5;
+    border-radius: 100%;
+    transition: height 0.2s ease  0.2s ;
+}
+
+.ogiz{
+    width: 100px;
+    height: 1px;
+    background-color: #fffda5;
+    border-radius: 15px 15px 15px 15px;
+    position: absolute; 
+    bottom: 35px;
+    left: 100px;
+    transition: height 0.2s ease  0.2s ;
+}
+
+.kalla:hover .bosh{
+    width: 150px;
+    
+}
+.kalla:hover .kozlar{
+    height: 100px;
+    
+}
+.kalla:hover .ogiz{
+    height: 20px;
+    
+}
